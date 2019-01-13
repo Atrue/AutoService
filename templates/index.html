@@ -1,0 +1,288 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+    <title>Product example for Bootstrap</title>
+
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap-material-design.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/material-theme.css' %}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/product.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+        </a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Главная</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Работы</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Местоположение</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">О нас</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+      </div>
+    </nav>
+
+    <div class="hero-logo position-relative overflow-hidden p-3 text-center bg-light">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">AutoService</h1>
+        <p class="lead font-weight-normal">Станция технического обслуживания</p>
+        <a class="btn btn-outline-secondary" href="#">Запись на ремонт</a>
+      </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <img class="rounded-circle" src="{% static 'img/label-1.png' %}" alt="Generic placeholder image" width="140" height="140">
+          <h2>Диагностика</h2>
+          <ul class="list-unstyled text-small">
+            <li><a>Электрика</a></li>
+            <li><a>Двигатель</a></li>
+            <li><a>Подвеска</a></li>
+            <li><a>КПП</a></li>
+          </ul>
+          <p><a class="btn btn-secondary show-works" data-title="Диагностика" data-id="diagnostics" href="#" role="button">Подробнее &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 text-center">
+          <img class="rounded-circle" src="{% static 'img/label-2.png' %}" alt="Generic placeholder image" width="140" height="140">
+          <h2>Ремонт</h2>
+          <ul class="list-unstyled text-small">
+            <li><a>КПП</a></li>
+            <li><a>Тормоза</a></li>
+            <li><a>Подвеска</a></li>
+            <li><a>Двигатель</a></li>
+          </ul>
+          <p><a class="btn btn-secondary show-works" data-title="Ремонт" data-id="repair" href="#" role="button">Подробнее &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 text-center">
+          <img class="rounded-circle" src="{% static 'img/label-3.png' %}" alt="Generic placeholder image" width="140" height="140">
+          <h2>Кузов</h2>
+          <ul class="list-unstyled text-small">
+            <li><a>Покраска</a></li>
+            <li><a>Замена стекол</a></li>
+            <li><a>Удаление вмятен</a></li>
+            <li><a>Замена бампера</a></li>
+          </ul>
+          <p><a class="btn btn-secondary show-works" data-title="Кузовной ремонт" data-id="carcase" href="#" role="button">Подробнее &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div>
+
+    <div class="container">
+      <hr class="featurette-divider">
+      <div class="">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading text-center">О нас</h2>
+            <p class="lead">AutoService - сертифицированный автосервис по ремонту, диагностике и обслуживанию автомобилей.</p>
+            <p class="lead">Занимаемся ремонтом автомобилей марок: <b>Skoda</b>, <b>Volkswagen</b>, <b>Seat</b>.</p>
+
+          </div>
+          <div class="col-md-5 order-md-1">
+            <div class="logo-bg-wrapper bg-primary round-border">
+              <div class="logo-container">
+                <div class="logo"><img src="{% static 'img/skoda.png' %}"></div>
+                <div class="logo"><img src="{% static 'img/vw.png' %}"></div>
+                <div class="logo"><img src="{% static 'img/seat.png' %}"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-1">
+            <h2 class="featurette-heading text-center">Местоположение</h2>
+            <p class="lead">Мы находимся по адресу г. Нижний Новгород ул. Гагарина 200</p>
+            <p class="lead">Работаем 7 дней в неделю с 8:00 до 20:00.</p>
+
+          </div>
+          <div class="col-md-5 order-md-2">
+            <div class="bg-image round-border" style="background-image: url({% static 'img/place.jpg' %})"></div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading text-center">Онлайн запись</h2>
+
+
+            <form id="form-request" action="{% url 'create-request-form' %}" method="POST">
+              {% csrf_token %}
+              <div class="form-group">
+                <select class="form-control empty-option" id="car_brand" name="car_brand" disabled></select>
+                <label for="car_brand" class="bmd-label-floating">Марка автомобиля</label>
+              </div>
+              <div class="form-group">
+                <select class="form-control empty-option" id="car_model" name="car_model" disabled></select>
+                <label for="car_model" class="bmd-label-floating">Модель</label>
+              </div>
+              <div class="form-group">
+                <select class="form-control empty-option" id="car_generation" name="car" disabled></select>
+                <label for="car_generation" class="bmd-label-floating">Год выпуска</label>
+              </div>
+              <div class="form-group">
+                <select class="form-control empty-option" id="work_type" name="type" disabled></select>
+                <label for="work_type" class="bmd-label-floating">Вид работ</label>
+              </div>
+              <div class="form-group">
+                <select class="form-control empty-option" id="date" name="selected_date" disabled></select>
+                <label for="date" class="bmd-label-floating">Дата</label>
+              </div>
+              <div class="form-group">
+                <select class="form-control empty-option" id="time" name="selected_time" disabled></select>
+                <label for="time" class="bmd-label-floating">Время</label>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="first_name" name="first_name">
+                <label for="first_name" class="bmd-label-floating">Ваше имя</label>
+              </div>
+              <div class="form-group">
+                <input type="hidden" name="phone">
+                <input type="text" class="form-control" id="phone" name="phone_pretty">
+                <label for="phone" class="bmd-label-floating">Телефон</label>
+              </div>
+              <div class="text-center">
+                <span class="price_text" style="display: none">Стоимость <b class="price"></b> руб.</span>
+                <button type="submit" class="btn btn-secondary btn-raised">Отправить</button>
+              </div>
+            </form>
+
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto round-border" src="{% static 'img/online.png' %}" alt="Онлайн запись">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="success_modal" tabindex="-1" role="dialog" aria-labelledby="success_modal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Заявка #<span class="request_number"></span> создана успешно</h5>
+          </div>
+          <div class="modal-body">
+            <span class="request_name"></span>, мы ждем Вас <span class="request_date"></span> в <span class="request_time"></span>.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="work_description_modal" tabindex="-1" role="dialog" aria-labelledby="work_description_modal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><span class="work_title"></span> </h5>
+          </div>
+          <div class="modal-body">
+            <h5>Стоимость популярных работ</h5>
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>Услуга</th>
+                  <th>Цена</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+          <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Business</a></li>
+            <li><a class="text-muted" href="#">Education</a></li>
+            <li><a class="text-muted" href="#">Government</a></li>
+            <li><a class="text-muted" href="#">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="{% static 'js/cleave.min.js' %}"></script>
+    <script src="{% static 'js/cleave-jquery.js' %}"></script>
+    <script src="{% static 'js/vendor/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap-material-design.js' %}"></script>
+    <script src="{% static 'js/vendor/holder.min.js' %}"></script>
+    <script src="{% static 'js/request-form.js' %}"></script>
+    <script>
+      $('body').bootstrapMaterialDesign();
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+  </body>
+</html>

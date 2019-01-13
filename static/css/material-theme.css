@@ -1,0 +1,102 @@
+.btn.btn-outline-secondary {
+    color: #2196f3;
+    border: 1px solid rgba(33, 150, 243, 0.5);
+}
+
+.btn.btn-outline-secondary:hover {
+    color: #2196f3;
+    border: 1px solid #2196f3;
+    background-color: rgba(33, 150, 243, 0.08);
+}
+
+.btn.btn-outline-secondary:active:hover,
+.btn.btn-outline-secondary:active:focus,
+.btn.btn-outline-secondary:focus{
+    color: #2196f3;
+    border: 1px solid #2196f3;
+    background-color: rgba(33, 150, 243, 0.08);
+}
+
+.btn.btn-secondary {
+    color: #2196f3;
+}
+
+.btn.btn-secondary:hover {
+    color: #2196f3;
+    background-color: rgba(33, 150, 243, 0.08);
+}
+
+.btn.btn-secondary:active:hover,
+.btn.btn-secondary:active:focus,
+.btn.btn-secondary:focus{
+    color: #2196f3;
+    background-color: rgba(33, 150, 243, 0.08);
+}
+
+.btn.btn-secondary.btn-raised {
+    background-color: #2196f3;
+    border-color: #2196f3;
+}
+
+.btn.btn-secondary.btn-raised:hover {
+    border-color: #1976d2;
+    background-color: #1976d2;
+}
+
+.btn.btn-secondary.btn-raised:active:hover,
+.btn.btn-secondary.btn-raised:active:focus,
+.btn.btn-secondary.btn-raised:focus{
+    background-color: #2196f3;
+}
+
+.bg-primary {
+    background: rgb(33,150,243) !important;
+}
+
+.form-control:disabled {
+    background-color: inherit;
+}
+
+.bmd-label-floating {
+    color: rgba(0, 0, 0, 0.54);
+}
+.form-control:disabled + .bmd-label-floating {
+    color: rgba(0, 0, 0, 0.28);
+}
+.form-control.empty-option option[value=""] {
+    display: none;
+}
+
+select.custom-file-control:not([size]):not([multiple]), select.form-control:not([size]):not([multiple]) {
+    height: calc(2rem + 1px);
+}
+
+.bmd-form-group {
+    padding-top: 1rem;
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.bmd-form-group .bmd-label-static,
+.bmd-form-group.is-filled .bmd-label-floating,
+.bmd-form-group .is-filled .bmd-label-floating,
+.bmd-form-group.is-focused .bmd-label-floating,
+.bmd-form-group .is-focused .bmd-label-floating {
+    top: 0.1rem;
+}
+
+.bmd-form-group .bmd-label-floating,
+.bmd-form-group .bmd-label-placeholder {
+    top: 1.4875rem;
+}
+
+.form-group.has-error .bmd-label-floating {
+    color: #f44336;
+}
+.form-group.has-error .bmd-help {
+    display: block;
+    color: #f44336 !important;
+    position: relative;
+}
