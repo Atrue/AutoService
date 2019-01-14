@@ -9,6 +9,7 @@ class RequestForm(forms.ModelForm):
     selected_time = forms.TimeField(required=True)
     first_name = forms.CharField(required=True)
     phone = forms.RegexField(required=True, regex=r'\d{11}')
+    is_accepted = forms.BooleanField(required=True)
 
     def clean_type(self):
         car = self.cleaned_data.get('car')
@@ -45,4 +46,9 @@ class RequestForm(forms.ModelForm):
 
     class Meta:
         model = Request
-        fields = ('car', 'type', 'selected_date', 'selected_time', 'first_name', 'phone')
+        fields = ('car', 'type', 'selected_date', 'selected_time', 'first_name', 'phone', 'is_accepted')
+
+
+class RequestCheckForm(forms.Form):
+    id = forms.IntegerField(required=True)
+    phone = forms.RegexField(required=True, regex=r'\d{11}')

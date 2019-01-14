@@ -1,11 +1,11 @@
-from django.views.generic import TemplateView, CreateView
+from django.views.generic import TemplateView, CreateView, FormView
 from django.http import JsonResponse
 from django.conf import settings
 from .models import (
     WorkType, WorkTypeName, CarBrand, Car, CarGeneration, Request, get_available_dates, get_available_times
 )
 from .helpers import AjaxListView
-from .forms import RequestForm
+from .forms import RequestForm, RequestCheckForm
 from datetime import datetime
 
 
@@ -133,3 +133,29 @@ class WorkInfoView(AjaxListView):
         category = request.GET.get('category')
         types = WorkTypeName.objects.filter(category=category)
         return map(self.serialize, types)
+
+
+class CheckRequestStatusView(FormView):
+    form_class = RequestCheckForm
+    http_method_names = ['post']
+
+    def form_valid(self, form):
+        try:
+            work = Request.objects.get(id=form.cleaned_data['id'], client__phone=form.cleaned_data['phone'])
+            return self.render_to_response({
+                'id': work.id,
+                'status': work.get_status_display(),
+                'finish_date': work.finish_date.strftime(settings.DATETIME_INPUT_FORMAT) if work.finish_date else None,
+            }, status=True)
+        except Request.DoesNotExist:
+            return self.render_to_response({}, status=True)
+
+    def form_invalid(self, form):
+        errors = {e: [i for i in form.errors[e]] for e in form.errors}
+        return self.render_to_response(errors, False)
+
+    def render_to_response(self, context, status=False, **response_kwargs):
+        return JsonResponse({
+            'status': status,
+            'data': context,
+        })

@@ -87,7 +87,7 @@ $(function() {
                 } else {
                     Object.keys(response.data).forEach(function(key) {
                         var input = $form.find('[name='+key+']');
-                        var group = input.parent('.form-group').addClass('has-error');
+                        var group = input.parents('.form-group').addClass('has-error');
                         var errors = response.data[key];
                         errors.forEach(function(error){
                             var block = $('<span>').addClass('bmd-help').text(error);

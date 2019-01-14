@@ -27,12 +27,11 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
         </a>
         <a class="py-2 d-none d-md-inline-block" href="#">Главная</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Работы</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Местоположение</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">О нас</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+        <a class="py-2 d-none d-md-inline-block" href="#works">Работы</a>
+        <a class="py-2 d-none d-md-inline-block" href="#about">О нас</a>
+        <a class="py-2 d-none d-md-inline-block" href="#place">Местоположение</a>
+        <a class="py-2 d-none d-md-inline-block" href="#request">Онлайн запись</a>
+        <a class="py-2 d-none d-md-inline-block" href="#check">Статус ремонта</a>
       </div>
     </nav>
 
@@ -40,15 +39,16 @@
       <div class="col-md-5 p-lg-5 mx-auto my-5">
         <h1 class="display-4 font-weight-normal">AutoService</h1>
         <p class="lead font-weight-normal">Станция технического обслуживания</p>
-        <a class="btn btn-outline-secondary" href="#">Запись на ремонт</a>
+        <a class="btn btn-outline-info" href="#request">Запись на ремонт</a>
       </div>
     </div>
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
       <!-- Three columns of text below the carousel -->
       <div class="row">
+        <a class="anchor" id="works"></a>
         <div class="col-lg-4 text-center">
-          <img class="rounded-circle" src="{% static 'img/label-1.png' %}" alt="Generic placeholder image" width="140" height="140">
+          <img class="rounded-circle" src="{% static 'img/label-2.png' %}" alt="Generic placeholder image" width="140" height="140">
           <h2>Диагностика</h2>
           <ul class="list-unstyled text-small">
             <li><a>Электрика</a></li>
@@ -56,10 +56,10 @@
             <li><a>Подвеска</a></li>
             <li><a>КПП</a></li>
           </ul>
-          <p><a class="btn btn-secondary show-works" data-title="Диагностика" data-id="diagnostics" href="#" role="button">Подробнее &raquo;</a></p>
+          <p><a class="btn btn-info show-works" data-title="Диагностика" data-id="diagnostics" href="javascript:;" role="button">Подробнее &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 text-center">
-          <img class="rounded-circle" src="{% static 'img/label-2.png' %}" alt="Generic placeholder image" width="140" height="140">
+          <img class="rounded-circle" src="{% static 'img/label-1.png' %}" alt="Generic placeholder image" width="140" height="140">
           <h2>Ремонт</h2>
           <ul class="list-unstyled text-small">
             <li><a>КПП</a></li>
@@ -67,7 +67,7 @@
             <li><a>Подвеска</a></li>
             <li><a>Двигатель</a></li>
           </ul>
-          <p><a class="btn btn-secondary show-works" data-title="Ремонт" data-id="repair" href="#" role="button">Подробнее &raquo;</a></p>
+          <p><a class="btn btn-info show-works" data-title="Ремонт" data-id="repair" href="javascript:;" role="button">Подробнее &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 text-center">
           <img class="rounded-circle" src="{% static 'img/label-3.png' %}" alt="Generic placeholder image" width="140" height="140">
@@ -78,13 +78,14 @@
             <li><a>Удаление вмятен</a></li>
             <li><a>Замена бампера</a></li>
           </ul>
-          <p><a class="btn btn-secondary show-works" data-title="Кузовной ремонт" data-id="carcase" href="#" role="button">Подробнее &raquo;</a></p>
+          <p><a class="btn btn-info show-works" data-title="Кузовной ремонт" data-id="carcase" href="javascript:;" role="button">Подробнее &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
     </div>
 
     <div class="container">
       <hr class="featurette-divider">
+      <a class="anchor" id="about"></a>
       <div class="">
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
@@ -94,7 +95,7 @@
 
           </div>
           <div class="col-md-5 order-md-1">
-            <div class="logo-bg-wrapper bg-primary round-border">
+            <div class="logo-bg-wrapper bg-info round-border">
               <div class="logo-container">
                 <div class="logo"><img src="{% static 'img/skoda.png' %}"></div>
                 <div class="logo"><img src="{% static 'img/vw.png' %}"></div>
@@ -106,6 +107,7 @@
       </div>
 
       <hr class="featurette-divider">
+      <a class="anchor" id="place"></a>
       <div class="">
         <div class="row featurette">
           <div class="col-md-7 order-md-1">
@@ -121,6 +123,7 @@
       </div>
 
       <hr class="featurette-divider">
+      <a class="anchor" id="request"></a>
       <div class="">
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
@@ -162,15 +165,53 @@
                 <input type="text" class="form-control" id="phone" name="phone_pretty">
                 <label for="phone" class="bmd-label-floating">Телефон</label>
               </div>
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="is_accepted"> Я согласен на обработку персональных данных
+                  </label>
+                </div>
+              </div>
               <div class="text-center">
                 <span class="price_text" style="display: none">Стоимость <b class="price"></b> руб.</span>
-                <button type="submit" class="btn btn-secondary btn-raised">Отправить</button>
+                <button type="submit" class="btn btn-info btn-raised">Отправить</button>
               </div>
             </form>
 
           </div>
-          <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto round-border" src="{% static 'img/online.png' %}" alt="Онлайн запись">
+          <div class="col-md-5 order-md-1 request-image-container">
+            <div class="request-image">
+              <img class="featurette-image img-fluid mx-auto round-border" src="{% static 'img/online.png' %}" alt="Онлайн запись">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <a class="anchor" id="check"></a>
+      <div class="">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-1">
+            <h2 class="featurette-heading text-center">Проверка статуса ремонта</h2>
+            <form id="form-check" action="{% url 'check-request-status' %}" method="POST">
+              {% csrf_token %}
+              <div class="form-group">
+                <input type="text" class="form-control" id="id" name="id">
+                <label for="id" class="bmd-label-floating">Номер заявки</label>
+              </div>
+              <div class="form-group">
+                <input type="hidden" name="phone">
+                <input type="text" class="form-control" id="phone" name="phone_pretty">
+                <label for="phone" class="bmd-label-floating">Телефон</label>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-info btn-raised">Отправить</button>
+              </div>
+            </form>
+
+          </div>
+          <div class="col-md-5 order-md-2">
+            <div class="bg-image bg-image-vertical round-border" style="background-image: url({% static 'img/question-mark.jpg' %})"></div>
           </div>
         </div>
       </div>
@@ -186,7 +227,7 @@
             <span class="request_name"></span>, мы ждем Вас <span class="request_date"></span> в <span class="request_time"></span>.
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
           </div>
         </div>
       </div>
@@ -212,57 +253,30 @@
             </table>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="check_modal" tabindex="-1" role="dialog" aria-labelledby="check_modal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Статус заявки</h5>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
           </div>
         </div>
       </div>
     </div>
 
     <footer class="container py-5">
-      <div class="row">
-        <div class="col-12 col-md">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-          <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Features</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Cool stuff</a></li>
-            <li><a class="text-muted" href="#">Random feature</a></li>
-            <li><a class="text-muted" href="#">Team feature</a></li>
-            <li><a class="text-muted" href="#">Stuff for developers</a></li>
-            <li><a class="text-muted" href="#">Another one</a></li>
-            <li><a class="text-muted" href="#">Last time</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Resource</a></li>
-            <li><a class="text-muted" href="#">Resource name</a></li>
-            <li><a class="text-muted" href="#">Another resource</a></li>
-            <li><a class="text-muted" href="#">Final resource</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Business</a></li>
-            <li><a class="text-muted" href="#">Education</a></li>
-            <li><a class="text-muted" href="#">Government</a></li>
-            <li><a class="text-muted" href="#">Gaming</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>About</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Team</a></li>
-            <li><a class="text-muted" href="#">Locations</a></li>
-            <li><a class="text-muted" href="#">Privacy</a></li>
-            <li><a class="text-muted" href="#">Terms</a></li>
-          </ul>
-        </div>
-      </div>
+      <p class="float-right"><a href="#" class="btn btn-info">Наверх</a></p>
+      <p class="text-center">© 2017-2018 AutoService.</p>
     </footer>
 
 
@@ -276,6 +290,7 @@
     <script src="{% static 'js/bootstrap-material-design.js' %}"></script>
     <script src="{% static 'js/vendor/holder.min.js' %}"></script>
     <script src="{% static 'js/request-form.js' %}"></script>
+    <script src="{% static 'js/check-status-form.js' %}"></script>
     <script>
       $('body').bootstrapMaterialDesign();
       Holder.addTheme('thumb', {

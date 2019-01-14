@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from .views import (
     IndexView, SearchTimeView, SearchWorkTypeView, SearchDateView, SearchCarBrandView, SearchCarView,
-    SearchCarGenerationView, CreateRequestForm, WorkInfoView,
+    SearchCarGenerationView, CreateRequestForm, WorkInfoView, CheckRequestStatusView
 )
 
 urlpatterns = [
@@ -30,5 +30,6 @@ urlpatterns = [
     path('ajax/search-date', SearchDateView.as_view(), name='search-date'),
     path('ajax/search-time', SearchTimeView.as_view(), name='search-time'),
     path('ajax/create-work', CreateRequestForm.as_view(), name='create-request-form'),
+    path('ajax/check-request-status', CheckRequestStatusView.as_view(), name='check-request-status'),
     path('admin/', admin.site.urls),
 ]

@@ -1,0 +1,5033 @@
+[
+  {
+    "model": "autoservice.carbrand",
+    "pk": 1,
+    "fields": {
+      "title": "Skoda"
+    }
+  },
+  {
+    "model": "autoservice.carbrand",
+    "pk": 2,
+    "fields": {
+      "title": "Volkswagen"
+    }
+  },
+  {
+    "model": "autoservice.carbrand",
+    "pk": 3,
+    "fields": {
+      "title": "SEAT"
+    }
+  },
+  {
+    "model": "autoservice.cartype",
+    "pk": 2,
+    "fields": {
+      "title": "\u041b\u0435\u0433\u043a\u043e\u0432\u044b\u0435 (\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f B)"
+    }
+  },
+  {
+    "model": "autoservice.cartype",
+    "pk": 3,
+    "fields": {
+      "title": "\u041b\u0435\u0433\u043a\u043e\u0432\u044b\u0435 (\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f C)"
+    }
+  },
+  {
+    "model": "autoservice.cartype",
+    "pk": 4,
+    "fields": {
+      "title": "\u0412\u043d\u0435\u0434\u043e\u0440\u043e\u0436\u043d\u0438\u043a\u0438"
+    }
+  },
+  {
+    "model": "autoservice.cartype",
+    "pk": 5,
+    "fields": {
+      "title": "\u041b\u0435\u0433\u043a\u043e\u0432\u044b\u0435 (\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f D)"
+    }
+  },
+  {
+    "model": "autoservice.car",
+    "pk": 2,
+    "fields": {
+      "brand": 2,
+      "title": "Polo",
+      "type": 2
+    }
+  },
+  {
+    "model": "autoservice.car",
+    "pk": 3,
+    "fields": {
+      "brand": 1,
+      "title": "Octavia",
+      "type": 3
+    }
+  },
+  {
+    "model": "autoservice.car",
+    "pk": 4,
+    "fields": {
+      "brand": 1,
+      "title": "Superb",
+      "type": 5
+    }
+  },
+  {
+    "model": "autoservice.car",
+    "pk": 5,
+    "fields": {
+      "brand": 1,
+      "title": "Yeti",
+      "type": 4
+    }
+  },
+  {
+    "model": "autoservice.car",
+    "pk": 6,
+    "fields": {
+      "brand": 1,
+      "title": "Fabia",
+      "type": 2
+    }
+  },
+  {
+    "model": "autoservice.car",
+    "pk": 7,
+    "fields": {
+      "brand": 2,
+      "title": "Jetta",
+      "type": 3
+    }
+  },
+  {
+    "model": "autoservice.car",
+    "pk": 8,
+    "fields": {
+      "brand": 2,
+      "title": "Golf",
+      "type": 3
+    }
+  },
+  {
+    "model": "autoservice.car",
+    "pk": 9,
+    "fields": {
+      "brand": 2,
+      "title": "Passat",
+      "type": 5
+    }
+  },
+  {
+    "model": "autoservice.car",
+    "pk": 10,
+    "fields": {
+      "brand": 2,
+      "title": "Touareg",
+      "type": 4
+    }
+  },
+  {
+    "model": "autoservice.car",
+    "pk": 11,
+    "fields": {
+      "brand": 2,
+      "title": "Tiguan",
+      "type": 4
+    }
+  },
+  {
+    "model": "autoservice.car",
+    "pk": 12,
+    "fields": {
+      "brand": 3,
+      "title": "Leon",
+      "type": 3
+    }
+  },
+  {
+    "model": "autoservice.car",
+    "pk": 13,
+    "fields": {
+      "brand": 3,
+      "title": "Toledo",
+      "type": 2
+    }
+  },
+  {
+    "model": "autoservice.car",
+    "pk": 14,
+    "fields": {
+      "brand": 3,
+      "title": "Ibiza",
+      "type": 2
+    }
+  },
+  {
+    "model": "autoservice.car",
+    "pk": 15,
+    "fields": {
+      "brand": 1,
+      "title": "Rapid",
+      "type": 2
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 6,
+    "fields": {
+      "car": 14,
+      "title": "V",
+      "year_start": 2017,
+      "year_end": null
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 7,
+    "fields": {
+      "car": 14,
+      "title": "IV \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433 2",
+      "year_start": 2015,
+      "year_end": 2017
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 8,
+    "fields": {
+      "car": 14,
+      "title": "IV \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2012,
+      "year_end": 2015
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 9,
+    "fields": {
+      "car": 14,
+      "title": "IV",
+      "year_start": 2008,
+      "year_end": 2012
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 10,
+    "fields": {
+      "car": 14,
+      "title": "III \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2006,
+      "year_end": 2008
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 11,
+    "fields": {
+      "car": 14,
+      "title": "III",
+      "year_start": 2001,
+      "year_end": 2008
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 12,
+    "fields": {
+      "car": 14,
+      "title": "II \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 1999,
+      "year_end": 2002
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 13,
+    "fields": {
+      "car": 14,
+      "title": "II",
+      "year_start": 1993,
+      "year_end": 1999
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 14,
+    "fields": {
+      "car": 14,
+      "title": "I",
+      "year_start": 1984,
+      "year_end": 1993
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 15,
+    "fields": {
+      "car": 13,
+      "title": "IV",
+      "year_start": 2012,
+      "year_end": null
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 16,
+    "fields": {
+      "car": 13,
+      "title": "III",
+      "year_start": 2004,
+      "year_end": 2009
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 17,
+    "fields": {
+      "car": 13,
+      "title": "II",
+      "year_start": 1998,
+      "year_end": 2004
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 18,
+    "fields": {
+      "car": 13,
+      "title": "I",
+      "year_start": 1991,
+      "year_end": 1999
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 19,
+    "fields": {
+      "car": 10,
+      "title": "III",
+      "year_start": 2018,
+      "year_end": null
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 20,
+    "fields": {
+      "car": 10,
+      "title": "II \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2014,
+      "year_end": 2018
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 21,
+    "fields": {
+      "car": 10,
+      "title": "II",
+      "year_start": 2010,
+      "year_end": 2014
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 22,
+    "fields": {
+      "car": 10,
+      "title": "I \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2007,
+      "year_end": 2010
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 23,
+    "fields": {
+      "car": 10,
+      "title": "I",
+      "year_start": 2002,
+      "year_end": 2006
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 24,
+    "fields": {
+      "car": 7,
+      "title": "VI \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2014,
+      "year_end": null
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 25,
+    "fields": {
+      "car": 7,
+      "title": "VI",
+      "year_start": 2010,
+      "year_end": 2015
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 26,
+    "fields": {
+      "car": 7,
+      "title": "V",
+      "year_start": 2005,
+      "year_end": 2011
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 27,
+    "fields": {
+      "car": 7,
+      "title": "IV",
+      "year_start": 1998,
+      "year_end": 2005
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 28,
+    "fields": {
+      "car": 7,
+      "title": "III",
+      "year_start": 1992,
+      "year_end": 1998
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 29,
+    "fields": {
+      "car": 7,
+      "title": "II",
+      "year_start": 1984,
+      "year_end": 1992
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 30,
+    "fields": {
+      "car": 7,
+      "title": "I",
+      "year_start": 1978,
+      "year_end": 1984
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 31,
+    "fields": {
+      "car": 8,
+      "title": "VII \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2017,
+      "year_end": null
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 32,
+    "fields": {
+      "car": 8,
+      "title": "VII",
+      "year_start": 2012,
+      "year_end": 2017
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 33,
+    "fields": {
+      "car": 8,
+      "title": "VI",
+      "year_start": 2008,
+      "year_end": 2012
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 34,
+    "fields": {
+      "car": 8,
+      "title": "V",
+      "year_start": 2003,
+      "year_end": 2009
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 35,
+    "fields": {
+      "car": 8,
+      "title": "IV",
+      "year_start": 1997,
+      "year_end": 2006
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 36,
+    "fields": {
+      "car": 8,
+      "title": "III",
+      "year_start": 1991,
+      "year_end": 2000
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 37,
+    "fields": {
+      "car": 8,
+      "title": "II",
+      "year_start": 1983,
+      "year_end": 1992
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 38,
+    "fields": {
+      "car": 8,
+      "title": "I",
+      "year_start": 1974,
+      "year_end": 1993
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 39,
+    "fields": {
+      "car": 9,
+      "title": "B8",
+      "year_start": 2014,
+      "year_end": null
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 40,
+    "fields": {
+      "car": 9,
+      "title": "B7",
+      "year_start": 2011,
+      "year_end": 2015
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 41,
+    "fields": {
+      "car": 9,
+      "title": "B6",
+      "year_start": 2005,
+      "year_end": 2010
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 42,
+    "fields": {
+      "car": 9,
+      "title": "B5 \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2000,
+      "year_end": 2005
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 43,
+    "fields": {
+      "car": 9,
+      "title": "B5",
+      "year_start": 1996,
+      "year_end": 2001
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 44,
+    "fields": {
+      "car": 9,
+      "title": "B4",
+      "year_start": 1993,
+      "year_end": 1997
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 45,
+    "fields": {
+      "car": 9,
+      "title": "B3",
+      "year_start": 1988,
+      "year_end": 1997
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 46,
+    "fields": {
+      "car": 9,
+      "title": "B2",
+      "year_start": 1980,
+      "year_end": 1988
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 47,
+    "fields": {
+      "car": 9,
+      "title": "B1",
+      "year_start": 1973,
+      "year_end": 1981
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 48,
+    "fields": {
+      "car": 2,
+      "title": "VI",
+      "year_start": 2017,
+      "year_end": null
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 49,
+    "fields": {
+      "car": 2,
+      "title": "V \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2014,
+      "year_end": null
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 50,
+    "fields": {
+      "car": 2,
+      "title": "V",
+      "year_start": 2009,
+      "year_end": 2015
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 51,
+    "fields": {
+      "car": 2,
+      "title": "IV \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2005,
+      "year_end": 2009
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 52,
+    "fields": {
+      "car": 2,
+      "title": "IV",
+      "year_start": 2001,
+      "year_end": 2005
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 53,
+    "fields": {
+      "car": 2,
+      "title": "III \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 1999,
+      "year_end": 2001
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 54,
+    "fields": {
+      "car": 2,
+      "title": "III",
+      "year_start": 1994,
+      "year_end": 2002
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 55,
+    "fields": {
+      "car": 2,
+      "title": "II \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 1990,
+      "year_end": 1994
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 56,
+    "fields": {
+      "car": 2,
+      "title": "II",
+      "year_start": 1981,
+      "year_end": 1994
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 57,
+    "fields": {
+      "car": 2,
+      "title": "I",
+      "year_start": 1975,
+      "year_end": 1988
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 58,
+    "fields": {
+      "car": 6,
+      "title": "III \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2018,
+      "year_end": null
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 59,
+    "fields": {
+      "car": 6,
+      "title": "III",
+      "year_start": 2014,
+      "year_end": 2018
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 60,
+    "fields": {
+      "car": 6,
+      "title": "II \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2010,
+      "year_end": 2014
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 61,
+    "fields": {
+      "car": 6,
+      "title": "II",
+      "year_start": 2007,
+      "year_end": 2010
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 62,
+    "fields": {
+      "car": 6,
+      "title": "I \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2004,
+      "year_end": 2007
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 63,
+    "fields": {
+      "car": 6,
+      "title": "I",
+      "year_start": 1999,
+      "year_end": 2004
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 64,
+    "fields": {
+      "car": 3,
+      "title": "III \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2017,
+      "year_end": null
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 65,
+    "fields": {
+      "car": 3,
+      "title": "III",
+      "year_start": 2013,
+      "year_end": 2017
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 66,
+    "fields": {
+      "car": 3,
+      "title": "II \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2008,
+      "year_end": 2013
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 67,
+    "fields": {
+      "car": 3,
+      "title": "II",
+      "year_start": 2004,
+      "year_end": 2009
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 68,
+    "fields": {
+      "car": 3,
+      "title": "I \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2000,
+      "year_end": 2011
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 69,
+    "fields": {
+      "car": 3,
+      "title": "I",
+      "year_start": 1996,
+      "year_end": 2000
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 70,
+    "fields": {
+      "car": 3,
+      "title": "Type 985",
+      "year_start": 1959,
+      "year_end": 1971
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 73,
+    "fields": {
+      "car": 5,
+      "title": "I \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2013,
+      "year_end": 2018
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 74,
+    "fields": {
+      "car": 5,
+      "title": "I",
+      "year_start": 2009,
+      "year_end": 2014
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 75,
+    "fields": {
+      "car": 4,
+      "title": "III",
+      "year_start": 2015,
+      "year_end": null
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 76,
+    "fields": {
+      "car": 4,
+      "title": "II \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2013,
+      "year_end": 2015
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 77,
+    "fields": {
+      "car": 4,
+      "title": "II",
+      "year_start": 2008,
+      "year_end": 2013
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 78,
+    "fields": {
+      "car": 4,
+      "title": "I \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2006,
+      "year_end": 2008
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 79,
+    "fields": {
+      "car": 4,
+      "title": "I",
+      "year_start": 2001,
+      "year_end": 2006
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 80,
+    "fields": {
+      "car": 15,
+      "title": "I",
+      "year_start": 2012,
+      "year_end": 2017
+    }
+  },
+  {
+    "model": "autoservice.cargeneration",
+    "pk": 81,
+    "fields": {
+      "car": 15,
+      "title": "I - \u0420\u0435\u0441\u0442\u0430\u0439\u043b\u0438\u043d\u0433",
+      "year_start": 2017,
+      "year_end": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 5,
+    "fields": {
+      "title": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0442\u0440\u0430\u043d\u0441\u043c\u0438\u0441\u0441\u0438\u0438",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 6,
+    "fields": {
+      "title": "\u041a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u043d\u0430\u044f \u0434\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0430\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044f",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 7,
+    "fields": {
+      "title": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 ABS",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 8,
+    "fields": {
+      "title": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0442\u043e\u0440\u043c\u043e\u0437\u043d\u043e\u0439 \u0441\u0438\u0441\u0442\u0435\u043c\u044b",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 9,
+    "fields": {
+      "title": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0430\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044f \u043f\u0435\u0440\u0435\u0434 \u043f\u043e\u043a\u0443\u043f\u043a\u043e\u0439",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 10,
+    "fields": {
+      "title": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0432\u044b\u0445\u043b\u043e\u043f\u043d\u043e\u0439 \u0441\u0438\u0441\u0442\u0435\u043c\u044b",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 11,
+    "fields": {
+      "title": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u043d\u043e\u0439 \u0441\u0438\u0441\u0442\u0435\u043c\u044b",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 12,
+    "fields": {
+      "title": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u043a\u043e\u043d\u0434\u0438\u0446\u0438\u043e\u043d\u0435\u0440\u0430 \u0430\u0432\u0442\u043e",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 13,
+    "fields": {
+      "title": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0445\u043e\u0434\u043e\u0432\u043e\u0439",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 14,
+    "fields": {
+      "title": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440\u0430",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 15,
+    "fields": {
+      "title": "\u041f\u043e\u043b\u043d\u0430\u044f \u0434\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0430\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044f",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 16,
+    "fields": {
+      "title": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0441\u0432\u0435\u0442\u043e\u0432\u044b\u0445 \u043f\u0440\u0438\u0431\u043e\u0440\u043e\u0432 - \u0444\u0430\u0440",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 17,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0436\u0438\u0434\u043a\u043e\u0441\u0442\u0438 \u0413\u0423\u0420",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 18,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0440\u0435\u043c\u043d\u044f \u0433\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440\u0430",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 19,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0441\u0430\u043b\u044c\u043d\u0438\u043a\u043e\u0432 \u0410\u041a\u041f\u041f (\u041a\u041f\u041f)",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 20,
+    "fields": {
+      "title": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0410\u041a\u041f\u041f (\u043a\u043e\u0440\u043e\u0431\u043a\u0438 \u0430\u0432\u0442\u043e\u043c\u0430\u0442)",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 21,
+    "fields": {
+      "title": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u044d\u043b\u0435\u043a\u0442\u0440\u0438\u043a\u0438, \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043e\u0431\u043e\u0440\u0443\u0434\u043e\u0432\u0430\u043d\u0438\u044f",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 22,
+    "fields": {
+      "title": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 23,
+    "fields": {
+      "title": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u043f\u043e\u0434\u0432\u0435\u0441\u043a\u0438",
+      "category": "diagnostics",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 24,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0432\u0442\u0443\u043b\u043e\u043a \u0441\u0442\u0430\u0431\u0438\u043b\u0438\u0437\u0430\u0442\u043e\u0440\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 25,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0441\u0442\u043e\u0435\u043a \u0441\u0442\u0430\u0431\u0438\u043b\u0438\u0437\u0430\u0442\u043e\u0440\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 26,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0430\u043c\u043e\u0440\u0442\u0438\u0437\u0430\u0442\u043e\u0440\u043e\u0432",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 27,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0433\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 28,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0433\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 29,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0432\u044b\u0436\u0438\u043c\u043d\u043e\u0433\u043e \u043f\u043e\u0434\u0448\u0438\u043f\u043d\u0438\u043a\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 30,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0448\u0430\u0440\u043e\u0432\u043e\u0439 \u043e\u043f\u043e\u0440\u044b",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 31,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0442\u0440\u043e\u0441\u0430 \u0440\u0443\u0447\u043d\u043e\u0433\u043e \u0442\u043e\u0440\u043c\u043e\u0437\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 32,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0448\u0440\u0443\u0441\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 33,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0441\u0442\u0430\u0440\u0442\u0435\u0440\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 34,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0441\u0442\u0430\u0440\u0442\u0435\u0440\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 35,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u0440\u043c\u043e\u0437\u043d\u043e\u0433\u043e \u0441\u0443\u043f\u043f\u043e\u0440\u0442\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 36,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u0440\u043e\u0432\u043e\u0434\u043a\u0438",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 37,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 ABS",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 38,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u0440\u043c\u043e\u0437\u043d\u044b\u0445 \u0434\u0438\u0441\u043a\u043e\u0432",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 39,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0441\u0442\u0443\u043f\u0438\u0447\u043d\u043e\u0433\u043e \u043f\u043e\u0434\u0448\u0438\u043f\u043d\u0438\u043a\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 40,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u043f\u043e\u0434\u0448\u0438\u043f\u043d\u0438\u043a\u0430 \u0437\u0430\u0434\u043d\u0435\u0439 \u0441\u0442\u0443\u043f\u0438\u0446\u044b",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 41,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0437\u0430\u0434\u043d\u0435\u0433\u043e \u0441\u0430\u043b\u044c\u043d\u0438\u043a\u0430 \u043a\u043e\u043b\u0435\u043d\u0432\u0430\u043b\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 42,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0441\u0430\u043b\u044c\u043d\u0438\u043a\u0430 \u043a\u043e\u043b\u0435\u043d\u0432\u0430\u043b\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 43,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u043f\u043e\u0434\u0443\u0448\u0435\u043a \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 44,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u043f\u0440\u043e\u043a\u043b\u0430\u0434\u043a\u0438 \u043a\u043e\u043b\u043b\u0435\u043a\u0442\u043e\u0440\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 45,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0440\u0430\u0434\u0438\u0430\u0442\u043e\u0440\u0430 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 46,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0431\u0435\u043d\u0437\u043e\u043d\u0430\u0441\u043e\u0441\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 47,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0433\u043b\u0443\u0448\u0438\u0442\u0435\u043b\u044f",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 48,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0433\u043b\u0443\u0448\u0438\u0442\u0435\u043b\u0435\u0439",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 49,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0433\u043e\u043b\u043e\u0432\u043a\u0438 \u0431\u043b\u043e\u043a\u0430 \u0446\u0438\u043b\u0438\u043d\u0434\u0440\u043e\u0432 (\u0413\u0411\u0426)",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 50,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0444\u043e\u0440\u0441\u0443\u043d\u043e\u043a \u0434\u0438\u0437\u0435\u043b\u044c\u043d\u044b\u0445 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u0435\u0439",
+      "category": "repair",
+      "description": ""
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 51,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0434\u0438\u0437\u0435\u043b\u044c\u043d\u044b\u0445 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u0435\u0439",
+      "category": "repair",
+      "description": ""
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 52,
+    "fields": {
+      "title": "\u041a\u0430\u043f\u0438\u0442\u0430\u043b\u044c\u043d\u044b\u0439 \u0440\u0435\u043c\u043e\u043d\u0442 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f",
+      "category": "repair",
+      "description": ""
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 53,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0410\u041a\u041f\u041f",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 54,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0440\u0443\u043b\u0435\u0432\u044b\u0445 \u043d\u0430\u043a\u043e\u043d\u0435\u0447\u043d\u0438\u043a\u043e\u0432",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 55,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0440\u0443\u043b\u0435\u0432\u043e\u0439 \u0442\u044f\u0433\u0438",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 56,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0440\u0443\u043b\u0435\u0432\u043e\u0439 \u0440\u0435\u0439\u043a\u0438",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 57,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0438 \u0437\u0430\u043c\u0435\u043d\u0430 \u0434\u0432\u0443\u0445\u043c\u0430\u0441\u0441\u043e\u0432\u043e\u0433\u043e \u043c\u0430\u0445\u043e\u0432\u0438\u043a\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 58,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0441\u0430\u043b\u044c\u043d\u0438\u043a\u0430 \u0437\u0430\u0434\u043d\u0435\u0433\u043e \u043c\u043e\u0441\u0442\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 59,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0441\u0446\u0435\u043f\u043b\u0435\u043d\u0438\u044f",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 60,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0441\u0430\u0439\u043b\u0435\u043d\u0442\u0431\u043b\u043e\u043a\u043e\u0432 \u043f\u043e\u0434\u0440\u0430\u043c\u043d\u0438\u043a\u0430 \u043f\u0435\u0440\u0435\u0434\u043d\u0435\u0433\u043e",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 61,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0441\u0430\u0439\u043b\u0435\u043d\u0442\u0431\u043b\u043e\u043a\u043e\u0432",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 62,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0437\u0430\u0434\u043d\u0438\u0445 \u0441\u0430\u0439\u043b\u0435\u043d\u0442\u0431\u043b\u043e\u043a\u043e\u0432",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 63,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0441\u0430\u0439\u043b\u0435\u043d\u0442\u0431\u043b\u043e\u043a\u043e\u0432 \u043f\u0440\u043e\u0434\u043e\u043b\u044c\u043d\u044b\u0445 \u0440\u044b\u0447\u0430\u0433\u043e\u0432",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 64,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0441\u0430\u043b\u044c\u043d\u0438\u043a\u0430 \u0440\u0430\u0441\u043f\u0440\u0435\u0434\u0432\u0430\u043b\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 65,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0441\u0446\u0435\u043f\u043b\u0435\u043d\u0438\u044f",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 66,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0442\u0435\u0440\u043c\u043e\u0441\u0442\u0430\u0442\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 67,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0441\u043b\u043e\u0436\u043d\u043e\u0439 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u0438\u043a\u0438",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 68,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0442\u043e\u043f\u043b\u0438\u0432\u043d\u043e\u0439 \u0441\u0438\u0441\u0442\u0435\u043c\u044b",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 69,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0441\u0438\u0441\u0442\u0435\u043c\u044b \u043e\u0445\u043b\u0430\u0436\u0434\u0435\u043d\u0438\u044f",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 70,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u043a\u043e\u043d\u0434\u0438\u0446\u0438\u043e\u043d\u0435\u0440\u0430 \u0430\u0432\u0442\u043e",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 71,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0432\u044b\u0445\u043b\u043e\u043f\u043d\u043e\u0439 \u0441\u0438\u0441\u0442\u0435\u043c\u044b",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 72,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u044d\u043b\u0435\u043a\u0442\u0440\u0438\u043a\u0438",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 73,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0442\u043e\u0440\u043c\u043e\u0437\u043d\u043e\u0439 \u0441\u0438\u0441\u0442\u0435\u043c\u044b",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 74,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0442\u043e\u0440\u043c\u043e\u0437\u043d\u043e\u0433\u043e \u0441\u0443\u043f\u043f\u043e\u0440\u0442\u0430",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 75,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0440\u0443\u043b\u0435\u0432\u044b\u0445 \u0440\u0435\u0435\u043a",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 76,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u041a\u041f\u041f",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 77,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f \u0430\u0432\u0442\u043e",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 78,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u043f\u043e\u0434\u0432\u0435\u0441\u043a\u0438",
+      "category": "repair",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 79,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0430\u0432\u0442\u043e\u0441\u0442\u0435\u043a\u043e\u043b",
+      "category": "carcase",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 80,
+    "fields": {
+      "title": "\u0412\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435 \u0433\u0435\u043e\u043c\u0435\u0442\u0440\u0438\u0438 \u043a\u0443\u0437\u043e\u0432\u0430",
+      "category": "carcase",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 81,
+    "fields": {
+      "title": "\u0417\u0430\u043c\u0435\u043d\u0430 \u043b\u043e\u0431\u043e\u0432\u043e\u0433\u043e \u0441\u0442\u0435\u043a\u043b\u0430",
+      "category": "carcase",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 82,
+    "fields": {
+      "title": "\u0422\u043e\u0447\u0435\u0447\u043d\u0430\u044f \u0441\u0432\u0430\u0440\u043a\u0430",
+      "category": "carcase",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 83,
+    "fields": {
+      "title": "\u041f\u043e\u043a\u0440\u0430\u0441\u043a\u0430 \u0430\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044f",
+      "category": "carcase",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 84,
+    "fields": {
+      "title": "\u041f\u043e\u0434\u0431\u043e\u0440 \u043a\u0440\u0430\u0441\u043a\u0438 \u0434\u043b\u044f \u0430\u0432\u0442\u043e",
+      "category": "carcase",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 85,
+    "fields": {
+      "title": "\u041e\u0446\u0435\u043d\u043a\u0430 \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u0438 \u043a\u0443\u0437\u043e\u0432\u043d\u043e\u0433\u043e \u0440\u0435\u043c\u043e\u043d\u0442\u0430",
+      "category": "carcase",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 86,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0441\u043a\u043e\u043b\u043e\u0432 \u0438 \u0446\u0430\u0440\u0430\u043f\u0438\u043d",
+      "category": "carcase",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 87,
+    "fields": {
+      "title": "\u0420\u0435\u043c\u043e\u043d\u0442 \u0431\u0430\u043c\u043f\u0435\u0440\u043e\u0432",
+      "category": "carcase",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktypename",
+    "pk": 88,
+    "fields": {
+      "title": "\u0423\u0434\u0430\u043b\u0435\u043d\u0438\u0435 \u0432\u043c\u044f\u0442\u0438\u043d",
+      "category": "carcase",
+      "description": null
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 7,
+    "fields": {
+      "name": 5,
+      "norm_hour": "1.50",
+      "price": "1050.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 11,
+    "fields": {
+      "name": 8,
+      "norm_hour": "0.90",
+      "price": "630.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 17,
+    "fields": {
+      "name": 13,
+      "norm_hour": "0.90",
+      "price": "675.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 19,
+    "fields": {
+      "name": 14,
+      "norm_hour": "0.75",
+      "price": "525.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 21,
+    "fields": {
+      "name": 15,
+      "norm_hour": "3.00",
+      "price": "2100.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 23,
+    "fields": {
+      "name": 16,
+      "norm_hour": "0.90",
+      "price": "630.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 25,
+    "fields": {
+      "name": 17,
+      "norm_hour": "0.75",
+      "price": "525.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 27,
+    "fields": {
+      "name": 18,
+      "norm_hour": "1.20",
+      "price": "840.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 29,
+    "fields": {
+      "name": 19,
+      "norm_hour": "0.75",
+      "price": "525.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 34,
+    "fields": {
+      "name": 23,
+      "norm_hour": "1.20",
+      "price": "840.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 79,
+    "fields": {
+      "name": 67,
+      "norm_hour": "7.50",
+      "price": "5250.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 81,
+    "fields": {
+      "name": 68,
+      "norm_hour": "0.90",
+      "price": "630.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 83,
+    "fields": {
+      "name": 69,
+      "norm_hour": "1.50",
+      "price": "1050.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 85,
+    "fields": {
+      "name": 70,
+      "norm_hour": "1.05",
+      "price": "750.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 87,
+    "fields": {
+      "name": 71,
+      "norm_hour": "1.50",
+      "price": "1050.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 89,
+    "fields": {
+      "name": 72,
+      "norm_hour": "0.75",
+      "price": "525.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 91,
+    "fields": {
+      "name": 73,
+      "norm_hour": "0.90",
+      "price": "630.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 93,
+    "fields": {
+      "name": 74,
+      "norm_hour": "2.40",
+      "price": "1680.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 95,
+    "fields": {
+      "name": 75,
+      "norm_hour": "1.50",
+      "price": "1050.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 97,
+    "fields": {
+      "name": 76,
+      "norm_hour": "0.75",
+      "price": "525.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 99,
+    "fields": {
+      "name": 77,
+      "norm_hour": "0.75",
+      "price": "525.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 101,
+    "fields": {
+      "name": 78,
+      "norm_hour": "0.75",
+      "price": "525.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 104,
+    "fields": {
+      "name": 80,
+      "norm_hour": "10.65",
+      "price": "7500.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 111,
+    "fields": {
+      "name": 86,
+      "norm_hour": "1.05",
+      "price": "750.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 113,
+    "fields": {
+      "name": 87,
+      "norm_hour": "2.10",
+      "price": "1500.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 115,
+    "fields": {
+      "name": 88,
+      "norm_hour": "1.05",
+      "price": "750.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 124,
+    "fields": {
+      "name": 5,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 125,
+    "fields": {
+      "name": 5,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 127,
+    "fields": {
+      "name": 5,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 128,
+    "fields": {
+      "name": 6,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 129,
+    "fields": {
+      "name": 6,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 130,
+    "fields": {
+      "name": 6,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 131,
+    "fields": {
+      "name": 6,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 132,
+    "fields": {
+      "name": 7,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 133,
+    "fields": {
+      "name": 7,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 134,
+    "fields": {
+      "name": 7,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 135,
+    "fields": {
+      "name": 7,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 136,
+    "fields": {
+      "name": 8,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 137,
+    "fields": {
+      "name": 8,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 139,
+    "fields": {
+      "name": 8,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 140,
+    "fields": {
+      "name": 9,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 141,
+    "fields": {
+      "name": 9,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 142,
+    "fields": {
+      "name": 9,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 143,
+    "fields": {
+      "name": 9,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 144,
+    "fields": {
+      "name": 10,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 145,
+    "fields": {
+      "name": 10,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 146,
+    "fields": {
+      "name": 10,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 147,
+    "fields": {
+      "name": 10,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 148,
+    "fields": {
+      "name": 11,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 149,
+    "fields": {
+      "name": 11,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 150,
+    "fields": {
+      "name": 11,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 151,
+    "fields": {
+      "name": 11,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 152,
+    "fields": {
+      "name": 12,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 153,
+    "fields": {
+      "name": 12,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 154,
+    "fields": {
+      "name": 12,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 155,
+    "fields": {
+      "name": 12,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 156,
+    "fields": {
+      "name": 13,
+      "norm_hour": "0.60",
+      "price": "450.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 157,
+    "fields": {
+      "name": 13,
+      "norm_hour": "0.60",
+      "price": "450.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 159,
+    "fields": {
+      "name": 13,
+      "norm_hour": "0.60",
+      "price": "450.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 160,
+    "fields": {
+      "name": 14,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 161,
+    "fields": {
+      "name": 14,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 163,
+    "fields": {
+      "name": 14,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 164,
+    "fields": {
+      "name": 15,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 165,
+    "fields": {
+      "name": 15,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 167,
+    "fields": {
+      "name": 15,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 168,
+    "fields": {
+      "name": 16,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 169,
+    "fields": {
+      "name": 16,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 171,
+    "fields": {
+      "name": 16,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 172,
+    "fields": {
+      "name": 17,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 173,
+    "fields": {
+      "name": 17,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 175,
+    "fields": {
+      "name": 17,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 176,
+    "fields": {
+      "name": 18,
+      "norm_hour": "0.80",
+      "price": "560.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 177,
+    "fields": {
+      "name": 18,
+      "norm_hour": "0.80",
+      "price": "560.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 179,
+    "fields": {
+      "name": 18,
+      "norm_hour": "0.80",
+      "price": "560.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 180,
+    "fields": {
+      "name": 19,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 181,
+    "fields": {
+      "name": 19,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 183,
+    "fields": {
+      "name": 19,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 184,
+    "fields": {
+      "name": 20,
+      "norm_hour": "1.10",
+      "price": "770.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 185,
+    "fields": {
+      "name": 20,
+      "norm_hour": "1.10",
+      "price": "770.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 186,
+    "fields": {
+      "name": 20,
+      "norm_hour": "1.10",
+      "price": "770.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 187,
+    "fields": {
+      "name": 20,
+      "norm_hour": "1.10",
+      "price": "770.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 188,
+    "fields": {
+      "name": 21,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 189,
+    "fields": {
+      "name": 21,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 190,
+    "fields": {
+      "name": 21,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 191,
+    "fields": {
+      "name": 21,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 192,
+    "fields": {
+      "name": 22,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 193,
+    "fields": {
+      "name": 22,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 194,
+    "fields": {
+      "name": 22,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 195,
+    "fields": {
+      "name": 22,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 196,
+    "fields": {
+      "name": 23,
+      "norm_hour": "0.80",
+      "price": "560.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 197,
+    "fields": {
+      "name": 23,
+      "norm_hour": "0.80",
+      "price": "560.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 199,
+    "fields": {
+      "name": 23,
+      "norm_hour": "0.80",
+      "price": "560.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 200,
+    "fields": {
+      "name": 24,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 201,
+    "fields": {
+      "name": 24,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 202,
+    "fields": {
+      "name": 24,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 203,
+    "fields": {
+      "name": 24,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 204,
+    "fields": {
+      "name": 25,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 205,
+    "fields": {
+      "name": 25,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 206,
+    "fields": {
+      "name": 25,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 207,
+    "fields": {
+      "name": 25,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 208,
+    "fields": {
+      "name": 26,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 209,
+    "fields": {
+      "name": 26,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 210,
+    "fields": {
+      "name": 26,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 211,
+    "fields": {
+      "name": 26,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 212,
+    "fields": {
+      "name": 27,
+      "norm_hour": "3.00",
+      "price": "2100.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 213,
+    "fields": {
+      "name": 27,
+      "norm_hour": "3.00",
+      "price": "2100.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 214,
+    "fields": {
+      "name": 27,
+      "norm_hour": "3.00",
+      "price": "2100.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 215,
+    "fields": {
+      "name": 27,
+      "norm_hour": "3.00",
+      "price": "2100.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 216,
+    "fields": {
+      "name": 28,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 217,
+    "fields": {
+      "name": 28,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 218,
+    "fields": {
+      "name": 28,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 219,
+    "fields": {
+      "name": 28,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 220,
+    "fields": {
+      "name": 29,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 221,
+    "fields": {
+      "name": 29,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 222,
+    "fields": {
+      "name": 29,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 223,
+    "fields": {
+      "name": 29,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 224,
+    "fields": {
+      "name": 30,
+      "norm_hour": "1.30",
+      "price": "910.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 225,
+    "fields": {
+      "name": 30,
+      "norm_hour": "1.30",
+      "price": "910.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 226,
+    "fields": {
+      "name": 30,
+      "norm_hour": "1.30",
+      "price": "910.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 227,
+    "fields": {
+      "name": 30,
+      "norm_hour": "1.30",
+      "price": "910.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 228,
+    "fields": {
+      "name": 31,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 229,
+    "fields": {
+      "name": 31,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 230,
+    "fields": {
+      "name": 31,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 231,
+    "fields": {
+      "name": 31,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 232,
+    "fields": {
+      "name": 32,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 233,
+    "fields": {
+      "name": 32,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 234,
+    "fields": {
+      "name": 32,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 235,
+    "fields": {
+      "name": 32,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 236,
+    "fields": {
+      "name": 33,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 237,
+    "fields": {
+      "name": 33,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 238,
+    "fields": {
+      "name": 33,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 239,
+    "fields": {
+      "name": 33,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 240,
+    "fields": {
+      "name": 34,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 241,
+    "fields": {
+      "name": 34,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 242,
+    "fields": {
+      "name": 34,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 243,
+    "fields": {
+      "name": 34,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 244,
+    "fields": {
+      "name": 35,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 245,
+    "fields": {
+      "name": 35,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 246,
+    "fields": {
+      "name": 35,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 247,
+    "fields": {
+      "name": 35,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 248,
+    "fields": {
+      "name": 36,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 249,
+    "fields": {
+      "name": 36,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 250,
+    "fields": {
+      "name": 36,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 251,
+    "fields": {
+      "name": 36,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 252,
+    "fields": {
+      "name": 37,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 253,
+    "fields": {
+      "name": 37,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 254,
+    "fields": {
+      "name": 37,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 255,
+    "fields": {
+      "name": 37,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 256,
+    "fields": {
+      "name": 38,
+      "norm_hour": "1.30",
+      "price": "910.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 257,
+    "fields": {
+      "name": 38,
+      "norm_hour": "1.30",
+      "price": "910.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 258,
+    "fields": {
+      "name": 38,
+      "norm_hour": "1.30",
+      "price": "910.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 259,
+    "fields": {
+      "name": 38,
+      "norm_hour": "1.30",
+      "price": "910.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 260,
+    "fields": {
+      "name": 39,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 261,
+    "fields": {
+      "name": 39,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 262,
+    "fields": {
+      "name": 39,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 263,
+    "fields": {
+      "name": 39,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 264,
+    "fields": {
+      "name": 40,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 265,
+    "fields": {
+      "name": 40,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 266,
+    "fields": {
+      "name": 40,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 267,
+    "fields": {
+      "name": 40,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 268,
+    "fields": {
+      "name": 41,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 269,
+    "fields": {
+      "name": 41,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 270,
+    "fields": {
+      "name": 41,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 271,
+    "fields": {
+      "name": 41,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 272,
+    "fields": {
+      "name": 42,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 273,
+    "fields": {
+      "name": 42,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 274,
+    "fields": {
+      "name": 42,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 275,
+    "fields": {
+      "name": 42,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 276,
+    "fields": {
+      "name": 43,
+      "norm_hour": "1.20",
+      "price": "840.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 277,
+    "fields": {
+      "name": 43,
+      "norm_hour": "1.20",
+      "price": "840.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 278,
+    "fields": {
+      "name": 43,
+      "norm_hour": "1.20",
+      "price": "840.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 279,
+    "fields": {
+      "name": 43,
+      "norm_hour": "1.20",
+      "price": "840.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 280,
+    "fields": {
+      "name": 44,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 281,
+    "fields": {
+      "name": 44,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 282,
+    "fields": {
+      "name": 44,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 283,
+    "fields": {
+      "name": 44,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 284,
+    "fields": {
+      "name": 45,
+      "norm_hour": "3.00",
+      "price": "2100.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 285,
+    "fields": {
+      "name": 45,
+      "norm_hour": "3.00",
+      "price": "2100.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 286,
+    "fields": {
+      "name": 45,
+      "norm_hour": "3.00",
+      "price": "2100.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 287,
+    "fields": {
+      "name": 45,
+      "norm_hour": "3.00",
+      "price": "2100.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 288,
+    "fields": {
+      "name": 46,
+      "norm_hour": "0.00",
+      "price": "0.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 289,
+    "fields": {
+      "name": 46,
+      "norm_hour": "0.00",
+      "price": "0.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 290,
+    "fields": {
+      "name": 46,
+      "norm_hour": "0.00",
+      "price": "0.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 291,
+    "fields": {
+      "name": 46,
+      "norm_hour": "0.00",
+      "price": "0.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 292,
+    "fields": {
+      "name": 47,
+      "norm_hour": "10.00",
+      "price": "7000.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 293,
+    "fields": {
+      "name": 47,
+      "norm_hour": "10.00",
+      "price": "7000.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 294,
+    "fields": {
+      "name": 47,
+      "norm_hour": "10.00",
+      "price": "7000.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 295,
+    "fields": {
+      "name": 47,
+      "norm_hour": "10.00",
+      "price": "7000.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 296,
+    "fields": {
+      "name": 48,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 297,
+    "fields": {
+      "name": 48,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 298,
+    "fields": {
+      "name": 48,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 299,
+    "fields": {
+      "name": 48,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 300,
+    "fields": {
+      "name": 49,
+      "norm_hour": "7.10",
+      "price": "5000.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 301,
+    "fields": {
+      "name": 49,
+      "norm_hour": "7.10",
+      "price": "5000.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 302,
+    "fields": {
+      "name": 49,
+      "norm_hour": "7.10",
+      "price": "5000.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 303,
+    "fields": {
+      "name": 49,
+      "norm_hour": "7.10",
+      "price": "5000.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 304,
+    "fields": {
+      "name": 50,
+      "norm_hour": "0.00",
+      "price": "15000.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 305,
+    "fields": {
+      "name": 50,
+      "norm_hour": "0.00",
+      "price": "15000.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 306,
+    "fields": {
+      "name": 50,
+      "norm_hour": "0.00",
+      "price": "15000.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 307,
+    "fields": {
+      "name": 50,
+      "norm_hour": "0.00",
+      "price": "15000.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 308,
+    "fields": {
+      "name": 51,
+      "norm_hour": "0.00",
+      "price": "25000.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 309,
+    "fields": {
+      "name": 51,
+      "norm_hour": "0.00",
+      "price": "25000.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 310,
+    "fields": {
+      "name": 51,
+      "norm_hour": "0.00",
+      "price": "25000.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 311,
+    "fields": {
+      "name": 51,
+      "norm_hour": "0.00",
+      "price": "25000.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 312,
+    "fields": {
+      "name": 52,
+      "norm_hour": "0.00",
+      "price": "10000.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 313,
+    "fields": {
+      "name": 52,
+      "norm_hour": "0.00",
+      "price": "10000.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 314,
+    "fields": {
+      "name": 52,
+      "norm_hour": "0.00",
+      "price": "10000.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 315,
+    "fields": {
+      "name": 52,
+      "norm_hour": "0.00",
+      "price": "10000.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 316,
+    "fields": {
+      "name": 53,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 317,
+    "fields": {
+      "name": 53,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 318,
+    "fields": {
+      "name": 53,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 319,
+    "fields": {
+      "name": 53,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 320,
+    "fields": {
+      "name": 54,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 321,
+    "fields": {
+      "name": 54,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 322,
+    "fields": {
+      "name": 54,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 323,
+    "fields": {
+      "name": 54,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 324,
+    "fields": {
+      "name": 55,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 325,
+    "fields": {
+      "name": 55,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 326,
+    "fields": {
+      "name": 55,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 327,
+    "fields": {
+      "name": 55,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 328,
+    "fields": {
+      "name": 56,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 329,
+    "fields": {
+      "name": 56,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 330,
+    "fields": {
+      "name": 56,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 331,
+    "fields": {
+      "name": 56,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 332,
+    "fields": {
+      "name": 57,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 333,
+    "fields": {
+      "name": 57,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 334,
+    "fields": {
+      "name": 57,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 335,
+    "fields": {
+      "name": 57,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 336,
+    "fields": {
+      "name": 58,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 337,
+    "fields": {
+      "name": 58,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 338,
+    "fields": {
+      "name": 58,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 339,
+    "fields": {
+      "name": 58,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 340,
+    "fields": {
+      "name": 59,
+      "norm_hour": "7.50",
+      "price": "5250.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 341,
+    "fields": {
+      "name": 59,
+      "norm_hour": "7.50",
+      "price": "5250.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 342,
+    "fields": {
+      "name": 59,
+      "norm_hour": "7.50",
+      "price": "5250.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 343,
+    "fields": {
+      "name": 59,
+      "norm_hour": "7.50",
+      "price": "5250.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 344,
+    "fields": {
+      "name": 60,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 345,
+    "fields": {
+      "name": 60,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 346,
+    "fields": {
+      "name": 60,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 347,
+    "fields": {
+      "name": 60,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 348,
+    "fields": {
+      "name": 61,
+      "norm_hour": "0.30",
+      "price": "210.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 349,
+    "fields": {
+      "name": 61,
+      "norm_hour": "0.30",
+      "price": "210.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 350,
+    "fields": {
+      "name": 61,
+      "norm_hour": "0.30",
+      "price": "210.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 351,
+    "fields": {
+      "name": 61,
+      "norm_hour": "0.30",
+      "price": "210.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 352,
+    "fields": {
+      "name": 62,
+      "norm_hour": "4.10",
+      "price": "2905.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 353,
+    "fields": {
+      "name": 62,
+      "norm_hour": "4.10",
+      "price": "2905.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 354,
+    "fields": {
+      "name": 62,
+      "norm_hour": "4.10",
+      "price": "2905.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 355,
+    "fields": {
+      "name": 62,
+      "norm_hour": "4.10",
+      "price": "2905.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 356,
+    "fields": {
+      "name": 63,
+      "norm_hour": "0.30",
+      "price": "210.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 357,
+    "fields": {
+      "name": 63,
+      "norm_hour": "0.30",
+      "price": "210.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 358,
+    "fields": {
+      "name": 63,
+      "norm_hour": "0.30",
+      "price": "210.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 359,
+    "fields": {
+      "name": 63,
+      "norm_hour": "0.30",
+      "price": "210.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 360,
+    "fields": {
+      "name": 64,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 361,
+    "fields": {
+      "name": 64,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 362,
+    "fields": {
+      "name": 64,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 363,
+    "fields": {
+      "name": 64,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 364,
+    "fields": {
+      "name": 65,
+      "norm_hour": "7.50",
+      "price": "5250.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 365,
+    "fields": {
+      "name": 65,
+      "norm_hour": "7.50",
+      "price": "5250.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 366,
+    "fields": {
+      "name": 65,
+      "norm_hour": "7.50",
+      "price": "5250.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 367,
+    "fields": {
+      "name": 65,
+      "norm_hour": "7.50",
+      "price": "5250.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 368,
+    "fields": {
+      "name": 66,
+      "norm_hour": "1.20",
+      "price": "840.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 369,
+    "fields": {
+      "name": 66,
+      "norm_hour": "1.20",
+      "price": "840.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 370,
+    "fields": {
+      "name": 66,
+      "norm_hour": "1.20",
+      "price": "840.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 371,
+    "fields": {
+      "name": 66,
+      "norm_hour": "1.20",
+      "price": "840.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 372,
+    "fields": {
+      "name": 67,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 373,
+    "fields": {
+      "name": 67,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 375,
+    "fields": {
+      "name": 67,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 376,
+    "fields": {
+      "name": 68,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 377,
+    "fields": {
+      "name": 68,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 379,
+    "fields": {
+      "name": 68,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 380,
+    "fields": {
+      "name": 69,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 381,
+    "fields": {
+      "name": 69,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 383,
+    "fields": {
+      "name": 69,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 384,
+    "fields": {
+      "name": 70,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 385,
+    "fields": {
+      "name": 70,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 387,
+    "fields": {
+      "name": 70,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 388,
+    "fields": {
+      "name": 71,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 389,
+    "fields": {
+      "name": 71,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 391,
+    "fields": {
+      "name": 71,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 392,
+    "fields": {
+      "name": 72,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 393,
+    "fields": {
+      "name": 72,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 395,
+    "fields": {
+      "name": 72,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 396,
+    "fields": {
+      "name": 73,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 397,
+    "fields": {
+      "name": 73,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 399,
+    "fields": {
+      "name": 73,
+      "norm_hour": "0.60",
+      "price": "420.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 400,
+    "fields": {
+      "name": 74,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 401,
+    "fields": {
+      "name": 74,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 403,
+    "fields": {
+      "name": 74,
+      "norm_hour": "1.60",
+      "price": "1120.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 404,
+    "fields": {
+      "name": 75,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 405,
+    "fields": {
+      "name": 75,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 407,
+    "fields": {
+      "name": 75,
+      "norm_hour": "1.00",
+      "price": "700.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 408,
+    "fields": {
+      "name": 76,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 409,
+    "fields": {
+      "name": 76,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 411,
+    "fields": {
+      "name": 76,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 412,
+    "fields": {
+      "name": 77,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 413,
+    "fields": {
+      "name": 77,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 415,
+    "fields": {
+      "name": 77,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 416,
+    "fields": {
+      "name": 78,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 417,
+    "fields": {
+      "name": 78,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 419,
+    "fields": {
+      "name": 78,
+      "norm_hour": "0.50",
+      "price": "350.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 420,
+    "fields": {
+      "name": 79,
+      "norm_hour": "3.40",
+      "price": "2400.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 421,
+    "fields": {
+      "name": 79,
+      "norm_hour": "3.40",
+      "price": "2400.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 422,
+    "fields": {
+      "name": 79,
+      "norm_hour": "3.40",
+      "price": "2400.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 423,
+    "fields": {
+      "name": 79,
+      "norm_hour": "3.40",
+      "price": "2400.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 424,
+    "fields": {
+      "name": 80,
+      "norm_hour": "7.10",
+      "price": "5000.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 425,
+    "fields": {
+      "name": 80,
+      "norm_hour": "7.10",
+      "price": "5000.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 427,
+    "fields": {
+      "name": 80,
+      "norm_hour": "7.10",
+      "price": "5000.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 428,
+    "fields": {
+      "name": 81,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 429,
+    "fields": {
+      "name": 81,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 430,
+    "fields": {
+      "name": 81,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 431,
+    "fields": {
+      "name": 81,
+      "norm_hour": "5.00",
+      "price": "3500.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 432,
+    "fields": {
+      "name": 82,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 433,
+    "fields": {
+      "name": 82,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 434,
+    "fields": {
+      "name": 82,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 435,
+    "fields": {
+      "name": 82,
+      "norm_hour": "2.00",
+      "price": "1400.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 436,
+    "fields": {
+      "name": 83,
+      "norm_hour": "8.50",
+      "price": "6000.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 437,
+    "fields": {
+      "name": 83,
+      "norm_hour": "8.50",
+      "price": "6000.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 438,
+    "fields": {
+      "name": 83,
+      "norm_hour": "8.50",
+      "price": "6000.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 439,
+    "fields": {
+      "name": 83,
+      "norm_hour": "8.50",
+      "price": "6000.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 440,
+    "fields": {
+      "name": 84,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 441,
+    "fields": {
+      "name": 84,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 442,
+    "fields": {
+      "name": 84,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 443,
+    "fields": {
+      "name": 84,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 444,
+    "fields": {
+      "name": 85,
+      "norm_hour": "0.00",
+      "price": "0.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 445,
+    "fields": {
+      "name": 85,
+      "norm_hour": "0.00",
+      "price": "0.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 446,
+    "fields": {
+      "name": 85,
+      "norm_hour": "0.00",
+      "price": "0.00",
+      "car_type": 4
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 447,
+    "fields": {
+      "name": 85,
+      "norm_hour": "0.00",
+      "price": "0.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 448,
+    "fields": {
+      "name": 86,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 449,
+    "fields": {
+      "name": 86,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 451,
+    "fields": {
+      "name": 86,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 452,
+    "fields": {
+      "name": 87,
+      "norm_hour": "1.40",
+      "price": "1000.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 453,
+    "fields": {
+      "name": 87,
+      "norm_hour": "1.40",
+      "price": "1000.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 455,
+    "fields": {
+      "name": 87,
+      "norm_hour": "1.40",
+      "price": "1000.00",
+      "car_type": 5
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 456,
+    "fields": {
+      "name": 88,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 2
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 457,
+    "fields": {
+      "name": 88,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 3
+    }
+  },
+  {
+    "model": "autoservice.worktype",
+    "pk": 459,
+    "fields": {
+      "name": 88,
+      "norm_hour": "0.70",
+      "price": "500.00",
+      "car_type": 5
+    }
+  }
+]
