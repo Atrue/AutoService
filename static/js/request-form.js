@@ -29,7 +29,9 @@ $(function() {
         result = result || [];
         $select[0].add(new Option(' ', ''))
         result.forEach(function (option) {
-           $select[0].add(new Option(option.label, option.id))
+            var htmlOption = new Option(option.label, option.id);
+            if (option.price) htmlOption.setAttribute('data-price', option.price);
+            $select[0].add(htmlOption);
         });
     }
     $form.find('.form-group').removeClass('is-filled');
@@ -43,9 +45,10 @@ $(function() {
     });
     $work_type.on('change', function(){
         loadOptions($date, 'ajax/search-date', {work: $(this).val()});
+        var workPrice = $(this).find('option:selected').data('price');
         $form.find('.price_text')
             .show()
-            .find('.price').text($(this).val());
+            .find('.price').text(workPrice);
     });
     $date.on('change', function(){
         loadOptions($time, 'ajax/search-time', {work: $work_type.val(), date: $(this).val()});

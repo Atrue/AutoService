@@ -23,7 +23,7 @@ class RequestForm(forms.ModelForm):
         work_type = self.cleaned_data.get('type')
         available_dates = get_available_dates(work_type)
         if selected_date not in available_dates:
-            raise forms.ValidationError('Выбранная дата занята. Выберете другое')
+            raise forms.ValidationError('Выбранная дата занята. Выберете другую дату')
         return selected_date
 
     def clean_selected_time(self):
@@ -32,7 +32,7 @@ class RequestForm(forms.ModelForm):
         work_type = self.cleaned_data.get('type')
         available_times = get_available_times(work_type, selected_date)
         if selected_time.strftime(settings.TIME_INPUT_FORMAT) not in available_times:
-            raise forms.ValidationError('Выбранное время занято. Выберете другое')
+            raise forms.ValidationError('Выбранное время занято. Выберете другое время')
         return selected_time
 
     def save(self, commit=True):
