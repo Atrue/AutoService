@@ -117,11 +117,17 @@ class Schedule(models.Model):
         return f"({self.employee}) {self.date} {self.start} - {self.end}"
 
     def get_date_range(self):
+        """
+        Возвращает кортеж из двух элементов: дата и окончание рабочего дня
+        """
         start = datetime.combine(self.date, self.start)
         end = datetime.combine(self.date, self.end)
         return start, end
 
     def get_empty_range(self):
+        """
+        Возвращает список кортежей всех свободных промежутков времени
+        """
         empty_range = [self.get_date_range()]
         works = Request.objects.filter(employee=self.employee, date__contains=self.date)
         for work in works:
@@ -129,6 +135,10 @@ class Schedule(models.Model):
         return empty_range
 
     def get_empty_range_for(self, need_hours: Decimal):
+        """
+        Возвращает генератор из кортежей всех свобожных промежутков времени
+        с учетом пераметра need_hours - количества часов на ремонт
+        """
         need_seconds = int(need_hours * 60 * 60)
         empty_range = self.get_empty_range()
         for date_range in empty_range:
@@ -137,6 +147,9 @@ class Schedule(models.Model):
                 yield start, end - timedelta(seconds=need_seconds)
 
     def is_available_for(self, need_hours: Decimal, date_time: datetime):
+        """
+        Доступность сотрудника для работы с требуемым количеством часов и выбранного времени
+        """
         empty_range = self.get_empty_range_for(need_hours)
         for date_range in empty_range:
             start, end = date_range
@@ -158,10 +171,16 @@ class WorkTypeName(models.Model):
     description = models.TextField("Описание", blank=True, null=True)
 
     def get_start_price(self):
+        """
+        Минимальная стоимость для текущего вида работ
+        """
         work_type = self.worktype_set.order_by('price').first()
         return work_type.price if work_type else 0
 
     def is_price_range(self):
+        """
+        Имеет ли текущий вид работы плавающую цену
+        """
         work_types = self.worktype_set.order_by('price')
         first_price = work_types.first()
         last_price = work_types.last()
@@ -185,8 +204,8 @@ class WorkType(models.Model):
         return f"{self.name} ({self.car_type})"
 
     class Meta:
-        verbose_name = "Вид работы"
-        verbose_name_plural = "Виды работ"
+        verbose_name = "Вид работы по автомобилям"
+        verbose_name_plural = "Виды работ по автомобилям"
 
 
 REQUEST_STATUSES = (
@@ -217,12 +236,23 @@ class Request(models.Model):
         return f"{self.type} - {self.date}"
 
     def get_date_range(self):
+        """
+        Возвращает кортеж из двух элементов: дата и окончание рабочего дня,
+        основываясь на выбранном виде работ
+        """
         start = self.date.replace(tzinfo=None)
         end = start + timedelta(minutes=int(self.type.norm_hour * 60))
         return start, end
 
 
 def get_available_dates(work_type: WorkType, start_range: date=None, end_range: date=None):
+    """
+    Возвращает все доступные для записи дни с учетом параметров
+    :param work_type: вид работы
+    :param start_range: начало промежутка времени (сегодня)
+    :param end_range: окончание промежутка времени (сегодня + 1 месяц)
+    :return: отсортированный список дней
+    """
     start_range = start_range or now().date()
     end_range = end_range or now() + timedelta(days=31)
     schedules = Schedule.objects.filter(date__gte=start_range, date__lt=end_range)
@@ -232,12 +262,24 @@ def get_available_dates(work_type: WorkType, start_range: date=None, end_range: 
 
 
 def get_available_times(work_type: WorkType, selected_date: date):
+    """
+    Возвращает доступное время для записи
+    :param work_type: вид работы
+    :param selected_date: выбранный день
+    :return: отсортированный список времени (час и минута)
+    """
     schedules = Schedule.objects.filter(date=selected_date)
     available_schedules = map(lambda s: s.get_empty_range_for(work_type.norm_hour), schedules)
     return sorted(set(get_time_periods(available_schedules)))
 
 
 def get_available_employee(work_type: WorkType, selected_date_time: datetime):
+    """
+    Возвращает первого случайного сотрудника, доступного для работы
+    :param work_type: вид работы
+    :param selected_date_time: день и время
+    :return: сотрудник, если найден
+    """
     schedules = Schedule.objects.filter(date=selected_date_time.date())
     available_schedules = list(filter(lambda s: s.is_available_for(work_type.norm_hour, selected_date_time), schedules))
     random_schedule = choice(available_schedules)

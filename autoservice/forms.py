@@ -2,6 +2,7 @@ from django import forms
 from django.conf import settings
 from datetime import datetime
 from .models import Request, Client, get_available_dates, get_available_times, get_available_employee
+import re
 
 
 class RequestForm(forms.ModelForm):
@@ -10,6 +11,13 @@ class RequestForm(forms.ModelForm):
     first_name = forms.CharField(required=True)
     phone = forms.RegexField(required=True, regex=r'\d{11}')
     is_accepted = forms.BooleanField(required=True)
+
+    def clean_phone(self):
+        phone = self.cleaned_data.get('phone', '')
+        re_phone = re.search(r'\d{11}', phone)
+        if not re_phone:
+            raise forms.ValidationError('Пожалуйста, введите корректный телефон')
+        return re_phone.group()
 
     def clean_type(self):
         car = self.cleaned_data.get('car')
