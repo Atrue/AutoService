@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 import locale
 import sys
+import django_heroku
 
 if sys.platform == 'win32':
     locale.setlocale(locale.LC_ALL, 'rus_rus')
@@ -140,3 +141,6 @@ DATETIME_INPUT_FORMAT = f'{DATE_INPUT_FORMAT} {TIME_INPUT_FORMAT}'
 
 DATE_INPUT_FORMATS = (DATE_INPUT_FORMAT, )
 DATETIME_INPUT_FORMATS = (DATETIME_INPUT_FORMAT, )
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
