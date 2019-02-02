@@ -15,10 +15,10 @@ import locale
 import sys
 import django_heroku
 
-if sys.platform == 'win32':
-    locale.setlocale(locale.LC_ALL, 'rus_rus')
-else:
-    locale.setlocale(locale.LC_ALL, 'ru_RU.UTF-8')
+# if sys.platform == 'win32':
+#     locale.setlocale(locale.LC_ALL, 'rus_rus')
+# else:
+#     locale.setlocale(locale.LC_ALL, 'ru_RU.UTF-8')
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
