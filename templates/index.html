@@ -1,4 +1,4 @@
-{% load static %}
+{% load static compress %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
 
     <title>AutoService</title>
 
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="{% static 'css/bootstrap-material-design.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/material-theme.css' %}" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="{% static 'css/product.css' %}" rel="stylesheet">
+    {% compress css %}
+      <link href="{% static 'css/style.css' %}" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+      <link href="{% static 'css/bootstrap-material-design.min.css' %}" rel="stylesheet">
+      <link href="{% static 'css/material-theme.css' %}" rel="stylesheet">
+      <!-- Custom styles for this template -->
+      <link href="{% static 'css/product.css' %}" rel="stylesheet">
+    {% endcompress %}
   </head>
 
   <body>
@@ -24,7 +26,9 @@
     <nav class="site-header sticky-top py-1">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
         <a class="py-2" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto">
+            <circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+          </svg>
         </a>
         <a class="py-2 d-none d-md-inline-block" href="#">Главная</a>
         <a class="py-2 d-none d-md-inline-block" href="#works">Работы</a>
@@ -284,20 +288,22 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="{% static 'js/cleave.min.js' %}"></script>
-    <script src="{% static 'js/cleave-jquery.js' %}"></script>
-    <script src="{% static 'js/vendor/popper.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap-material-design.js' %}"></script>
-    <script src="{% static 'js/vendor/holder.min.js' %}"></script>
-    <script src="{% static 'js/request-form.js' %}"></script>
-    <script src="{% static 'js/check-status-form.js' %}"></script>
-    <script>
-      $('body').bootstrapMaterialDesign();
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
+    {% compress js %}
+      <script src="{% static 'js/cleave.min.js' %}"></script>
+      <script src="{% static 'js/cleave-jquery.js' %}"></script>
+      <script src="{% static 'js/vendor/popper.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap-material-design.js' %}"></script>
+      <script src="{% static 'js/vendor/holder.min.js' %}"></script>
+      <script src="{% static 'js/request-form.js' %}"></script>
+      <script src="{% static 'js/check-status-form.js' %}"></script>
+      <script>
+        $('body').bootstrapMaterialDesign();
+        Holder.addTheme('thumb', {
+          bg: '#55595c',
+          fg: '#eceeef',
+          text: 'Thumbnail'
+        });
+      </script>
+    {% endcompress %}
   </body>
 </html>
