@@ -135,6 +135,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
+)
 
 DATE_INPUT_FORMAT = '%d/%m/%Y'
 TIME_INPUT_FORMAT = '%H:%M'
@@ -142,6 +147,9 @@ DATETIME_INPUT_FORMAT = f'{DATE_INPUT_FORMAT} {TIME_INPUT_FORMAT}'
 
 DATE_INPUT_FORMATS = (DATE_INPUT_FORMAT, )
 DATETIME_INPUT_FORMATS = (DATETIME_INPUT_FORMAT, )
+
+# Compress enable
+COMPRESS_ENABLED = True
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
